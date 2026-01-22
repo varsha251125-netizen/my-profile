@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Varsha Bandari | Resume</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- PROFILE SECTION -->
+  <div class="profile">
+    <img src="profile.jpg" alt="Profile Photo">
+    <h1>Varsha Bandari</h1>
+
+    <p class="contact">
+      📞 9182260091 <br>
+      📧 varshabandari087@gmail.com <br>
+      📍 Hyderabad
+    </p>
+
+    <p class="about">
+      Motivated and detail-oriented graduate seeking an entry-level position
+      where I can apply my academic knowledge, learn new skills, and contribute
+      to the growth of the organization while building a successful career.
+    </p>
+
+    <button onclick="toggleResume()">📄 Resume / Print</button>
+  </div>
+
+  <!-- RESUME DETAILS (HIDDEN) -->
+  <div id="resume" class="resume">
+
+    <section>
+      <h2>Skill Summary</h2>
+      <p><b>Programming:</b> C, C++, Python, Java</p>
+      <p><b>Tools:</b> MS Office, Git, Excel, Canvas</p>
+      <p><b>Soft Skills:</b> Communication, Problem Solving, Teamwork, Time Management</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <ul>
+        <li>
+          <b>Student Management System</b><br>
+          Tech: Python<br>
+          Features: Add, update, delete, fetch student records
+        </li>
+
+        <li>
+          <b>Online Resume Builder</b><br>
+          Tech: HTML, CSS, JavaScript, Bootstrap<br>
+          Features: User enters details, Resume PDF generated
+        </li>
+
+        <li>
+          <b>Chatbot (Customer Support Assistant)</b><br>
+          Tech: Python<br>
+          Features: Answers FAQs and guides users
+        </li>
+
+        <li>
+          <b>Attendance System using Face Recognition</b><br>
+          Tech: Python<br>
+          Features: Detect faces and mark attendance automatically
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Strengths</h2>
+      <ul>
+        <li>Quick learner and adaptable</li>
+        <li>Team player with good communication skills</li>
+        <li>Problem-solving and analytical thinking</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>B.Tech – JNTUH UCEM (2023–2027) – First Class</li>
+        <li>Intermediate – KGBV (2020–2022) – First Class</li>
+        <li>SSC – KGBV Ramagiri (2019–2020) – First Class</li>
+      </ul>
+    </section>
+
+    <div class="buttons">
+      <button onclick="window.print()">🖨 Print / Save as PDF</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function toggleResume() {
+  const resume = document.getElementById("resume");
+  resume.style.display =
+    resume.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
